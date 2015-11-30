@@ -5,7 +5,8 @@ public class Sylvester_Construction {
         Scanner scanner = new Scanner(System.in);
         int N = scanner.nextInt();
         boolean[][] H = new boolean[N][N];
-        // initialize Hadamard matrix of order N
+
+
         H[0][0] = true;
         for (int n = 1; n < N; n += n) {
             for (int i = 0; i < n; i++) {
